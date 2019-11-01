@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="buttons">
+            <button id="addNewCookie" onclick="addNewCookie()">Добавить новую cookie</button>
+            <button id="deleteAllCookies" onclick="deleteAllCookies()">Удалить все cookies</button>
+        </div>
+        
+        <div id="form">
+            <form id="addCookie" style="display: none">
+                <label for="name">Имя: </label>
+                <input type="text" id="name"><br>
+                <label for="value">Значение: </label>
+                <input type="text" id="value"><br>
+                <label for="expires">Срок действия (количество дней): </label>
+                <input type="text" id="expires"><br>
+            </form>
+        </div>
+
+        <button id="add" onclick="add()" style="display: none">Добавить</button>
+
+        <div id="table">
+            <h2>Список всех cookie</h2>
+            
+            <table id="myTable" border="3">
+                <tbody>
+                <tr>
+                    <th>Имя</th>
+                    <th>Значение</th>
+                    <th>Срок действия</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button onclick="show()">Показать</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

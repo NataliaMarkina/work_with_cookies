@@ -1,0 +1,74 @@
+body {
+    background-color: linen;
+    width: 96%;
+    font-family: Verdana, sans-serif;
+    font-size: 14pt;
+    color: crimson;
+    margin: 2% 2% 2% 2%;
+}
+
+h2 {
+    color: darkred;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 2%;
+    background-color: floralwhite;
+    color: black;
+    border-color: darkred;
+}
+
+button {
+    text-decoration: none;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    font-family: Verdana, sans-serif;
+    font-size: 10pt;
+    color: black;
+    background-color: floralwhite;
+    padding: 1% 1% 1% 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: darkred;
+}
+
+#deleteAllCookies {
+    float: right;
+}
+
+#addNewCookie:disabled {
+    color: grey;
+    border: 1px solid grey;
+    background-color: mintcream;
+}
+
+input[type="text"] {
+    border: 1px solid darkred;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 12pt;
+    color: black;
+    background-color: floralwhite;
+    outline: none;
+    margin-bottom: 1%;
+}
+
+input[type="text"]#name {
+    width: 27%;
+}
+
+input[type="text"]#value {
+    width: 23%;
+}
+
+input[type="text"]#expires {
+    width: 5%;
+}
